@@ -1,18 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class Question : MonoBehaviour
+[CreateAssetMenu(fileName = "question",menuName ="ScriptableObjects/question")]
+public class Question : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public string question;
+    public string[] answers = new string[4];
+    public int answerKey;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+    
 }
